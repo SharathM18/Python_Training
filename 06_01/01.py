@@ -10,7 +10,5 @@ def func(n):
     res_list = list(map(int, res))
     print(sum(res_list))
 
-
-
 ip = int(input('Enter the number: '))
 func(ip)
