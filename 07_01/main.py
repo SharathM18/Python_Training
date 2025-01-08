@@ -45,3 +45,4 @@ Tuple () - +, del, .count(value), .index(value)
 Dict {} - .key(), .values(), .items(), .get(key), [key] = value, .update({}), .clear(), .popitem(), .pop(key), del, .copy()
 Set - .add(value), .update({} or value), .copy(), .pop(), .remove(value), .clear()
 '''
+
