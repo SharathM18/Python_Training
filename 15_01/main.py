@@ -46,6 +46,8 @@ class A:
         print('a')
     def a1(self):
         print('a1')
+    def z1(self):
+        print('za')
 
 class B:
     def __init__(self):
@@ -64,7 +66,12 @@ class C(A, B):
         self.a1()
         self.b1()
 
+    def z1(self):
+        print('zc')
+        super().z1()
+
 bb = C(9)
+bb.z1()
 
 '''
 super().__init__() method useful when happens method overriding means same method name and parameters
