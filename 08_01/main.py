@@ -1,5 +1,3 @@
-from typing import final
-
 mydic = {'a': None} #unorder collection and order wrt key
 # float, int, small letter, big letter
 

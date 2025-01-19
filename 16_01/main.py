@@ -55,12 +55,13 @@ obj = MyClass()
 
 print(obj.public_var)
 print(obj._protected_var)
+# print(obj.__private_var)  # Error, can't access private member directly
+print(obj._MyClass__privatevar)
 
 print(obj._protected_method())
 print(obj._MyClass__private_method())
 
-# print(obj.__private_var)  # Error, can't access private member directly
-print(obj._MyClass__privatevar)
+
 
 class bill:
     def __init__(self, m, n):

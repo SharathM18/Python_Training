@@ -1,7 +1,3 @@
-# nested classes and how we can call
-# how to declare main function in python
-# how to create a module and access the module efficiently
-
 import demo_module
 from demo_module import increment
 
