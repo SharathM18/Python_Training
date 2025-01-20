@@ -13,7 +13,7 @@ def abc_super_market(prod_code, data):
         if k == prod_code:
 
             manu_date = datetime.datetime.strptime(v['manufactured_date'], "%m-%d-%Y")
-            expiry_date =manu_date  + datetime.timedelta(days= v['best_before'] * 30)
+            expiry_date = manu_date  + datetime.timedelta(days= v['best_before'] * 30)
             today_date = datetime.datetime.today()
 
             if today_date > expiry_date:
