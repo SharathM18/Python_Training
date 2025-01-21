@@ -108,10 +108,4 @@ print(datetime.strptime(date_str, '%d/%m/%Y') + timedelta(days=365, hours=8, min
 import calendar
 print(calendar.calendar(2025))
 
-# print(calendar.weekday(2025,1,1))
-ff = calendar.setfirstweekday(3)
-print(ff)
-
-
-
-
+print(calendar.weekday(2025,1,1))
