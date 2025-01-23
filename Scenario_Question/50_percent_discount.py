@@ -17,21 +17,21 @@ class XYZ:
 
         
     def calc(self):
-        prod_name = input('Enter the item name: ')
+        prod_name = input('Enter the item name: ').lower()
 
         match prod_name:
             case 'rava':
-                quantity = int(input(f'Quantity of {prod_name}: '))
+                quantity = int(input(f'Enter the Quantity of {prod_name}: '))
                 rava_amt = quantity * self.prod_price['rava']
                 self.res_amount += rava_amt
 
             case 'rice':
-                quantity = int(input(f'Quantity of {prod_name}: '))
+                quantity = int(input(f'Enter the Quantity of {prod_name}: '))
                 rice_amt = quantity * self.prod_price['rice']
                 self.res_amount += rice_amt
 
             case 'sugar':
-                quantity = int(input(f'Quantity of {prod_name}: '))
+                quantity = int(input(f'Enter the Quantity of {prod_name}: '))
                 if quantity < 2:
                     sugar_amt = quantity * self.prod_price['sugar']
                     self.res_amount += sugar_amt
@@ -42,12 +42,12 @@ class XYZ:
                     self.res_amount += sugar_amt
 
             case 'toor dal':
-                quantity = int(input(f'Quantity of {prod_name}: '))
+                quantity = int(input(f'Enter the Quantity of {prod_name}: '))
                 dal_amt = quantity * self.prod_price['toor dal']
                 self.res_amount += dal_amt
 
             case 'wheat flour':
-                quantity = int(input(f'Quantity of {prod_name}: '))
+                quantity = int(input(f'Enter the TQuantity of {prod_name}: '))
                 wheat_amt = (quantity * self.prod_price['wheat flour']) / 2
                 self.res_amount += wheat_amt
 
