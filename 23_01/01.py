@@ -8,12 +8,27 @@ b. enter salary of the person raise exception when salary below 10000
 a. enter username if namelength is below 4 and above 8 raise exception
 '''
 
+class UsernameLengthFailure(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+
+    def __str__(self):
+        return f"CustomError: {self.message}"
+
+
 try:
     if len(input('enter name of the person: ')) < 3:
-        raise 'name must be > 3'
+        raise UsernameLengthFailure('name must be > 3')
 
     if float(input('enter salary of the person: ')) < 10000:
-        raise 'salary must be > 10000'
-except:
-    print('Error')
+        raise UsernameLengthFailure('salary must be > 10000')
+
+    user_ip = len(input('enter username of the person: '))
+
+    if not user_ip > 3 and user_ip < 8:
+        raise UsernameLengthFailure('Username Length Failure')
+
+except UsernameLengthFailure as e:
+    print(e)
 
